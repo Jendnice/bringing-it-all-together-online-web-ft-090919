@@ -84,11 +84,11 @@ class Dog
     Dog.new_from_db(result)
   end 
   
-  def self.find_or_create_by(name:, breed:)
+  def self.find_or_create_by(name: , breed:)
    if !self.name.empty?
      self.find_by_name(name)
    else 
-     attributes = (name:, breed:)
+     attributes = (name: , breed:)
      self.create(attributes)
    end 
  end 

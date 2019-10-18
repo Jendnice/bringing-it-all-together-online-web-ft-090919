@@ -2,7 +2,7 @@ class Dog
   
   attr_accessor :id, :name, :breed 
   
-  def attributes(name: , breed: , id: nil)
+  def attributes(name: , breed: )
     params = {
     def initialize 
       

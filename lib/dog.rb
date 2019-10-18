@@ -29,11 +29,11 @@ class Dog
   
   def self.new_from_db(row)
     attributes = {
-      id = 
+      :id => row[0],
+      :name => row[1],
+      :breed => row[2]
     }
-    new_dog = Dog.new(row[0], row[1], row[2])
-    # dog.save
-    # dog
+    new_dog = Dog.new(attributes)
   end 
   
   def self.find_by_name(name)

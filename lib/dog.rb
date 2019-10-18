@@ -41,7 +41,9 @@ class Dog
     if self.id 
       self.update 
     else 
-      
+      sql = <<-SQL
+        INSERT INTO dogs()
+      SQL
     
   end 
   

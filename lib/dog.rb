@@ -85,7 +85,12 @@ class Dog
   end 
   
   def self.find_or_create_by(name:, breed:)
-    
+    if !self.name.empty?
+     self.find_by_name(name)
+   else 
+     attributes = (name: breed: )
+     self.create(attributes)
+   end 
   end 
   
 end 

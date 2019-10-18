@@ -101,9 +101,11 @@ class Dog
      dog_data = dog[0]
      dog = Dog.new(dog_data)
    else 
-     dog = self.create({name: name, breed: breed})
-    # attributes = (name: , breed:)
-    # self.create(attributes)
+     attributes = {
+      :name => name,
+      :breed => breed
+      }
+     dog = self.create(attributes)
    end 
    dog 
   end 

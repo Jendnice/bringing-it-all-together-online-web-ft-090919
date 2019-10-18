@@ -47,7 +47,7 @@ class Dog
       SQL
       
       DB[:conn].execute(sql, self.name self.breed)
-      @id = DB[:conn].execute()
+      @id = DB[:conn].execute("SELECT last insert rowid")
     
   end 
   

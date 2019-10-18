@@ -62,4 +62,9 @@ class Dog
     self
   end 
   
+  def self.create(attributes) 
+    
+    .save
+  end 
+  
 end 

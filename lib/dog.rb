@@ -31,12 +31,14 @@ class Dog
     new_dog = self.new(row[0], row[1], row[2])
   end 
   
-  def self.find_by_name
+  def self.find_by_name(name)
     sql = <<-SQL
       SELECT * 
       FROM dogs 
       WHERE name = ?
     SQL
+    
+    DB[:conn].execute(sql)
   end 
   
   def update 

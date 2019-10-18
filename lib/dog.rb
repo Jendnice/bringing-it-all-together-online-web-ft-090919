@@ -88,8 +88,10 @@ class Dog
    if !self.name.empty?
      self.find_by_name(name)
    else 
-     attributes = (name: , breed:)
+     attributes = (name:, breed:)
      self.create(attributes)
+   end 
+ end 
   end 
   
 end 

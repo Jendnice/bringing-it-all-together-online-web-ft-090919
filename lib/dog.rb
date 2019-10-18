@@ -91,7 +91,6 @@ class Dog
      attributes = (name: , breed:)
      self.create(attributes)
    end 
- end 
   end 
   
 end 

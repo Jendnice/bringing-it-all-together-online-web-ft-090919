@@ -9,7 +9,7 @@ class Dog
   
   def self.create_table
     sql = <<-SQL
-    INSERT TABLE dogs (
+    INSERT TABLE dog (
       id INTEGER PRIMARY KEY,
       name TEXT,
       breed TEXT

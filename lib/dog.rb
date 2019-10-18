@@ -43,7 +43,7 @@ class Dog
   end 
   
   def update 
-    
+    sql = UPDATE 
   end 
   
   def save 
